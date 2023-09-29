@@ -10,7 +10,7 @@ export default {
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
+          github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://sahabat-muslim.netlify.app/'
         },
         {
@@ -19,7 +19,7 @@ export default {
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
+          github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://sahabat-muslim.netlify.app/'
         },
         {
@@ -28,7 +28,7 @@ export default {
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
+          github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://sahabat-muslim.netlify.app/'
         },
         {
@@ -37,7 +37,7 @@ export default {
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
+          github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://sahabat-muslim.netlify.app/'
         },
         {
@@ -46,7 +46,7 @@ export default {
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
+          github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://sahabat-muslim.netlify.app/'
         },
         {
@@ -55,7 +55,7 @@ export default {
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
-          github: 'https://github.com/rakha-elctrnx/muslim-companion',
+          github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://sahabat-muslim.netlify.app/'
         }
       ]
