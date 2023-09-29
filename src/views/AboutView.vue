@@ -26,55 +26,43 @@ export default {
           id: 4,
           name: 'Javascript',
           imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png',
-          status: 'Advance'
+          status: 'Advanced'
         },
         {
           id: 5,
-          name: 'MySQL',
-          imageUrl: 'img/mysql.png',
-          status: 'Advance'
-        },
-        {
-          id: 6,
           name: 'Codeigniter',
           imageUrl: 'https://cdn-peanutsquare.b-cdn.net/wp-content/uploads/2022/11/codeigniter-logo.png',
           status: 'Intermediate'
         },
         {
-          id: 7,
+          id: 6,
           name: 'VueJS',
           imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-vue-282497.png?f=webp',
           status: 'Intermediate'
         },
         {
-          id: 8,
+          id: 7,
           name: 'ReactJS',
           imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
           status: 'Intermediate'
         },
         {
-          id: 9,
+          id: 8,
           name: 'TypeScript',
           imageUrl: 'img/typescript.png',
           status: 'Intermediate'
         },
         {
-          id: 10,
+          id: 9,
           name: 'Tailwind',
           imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
           status: 'Intermediate'
         },
         {
-          id: 11,
+          id: 10,
           name: 'Bootstrap',
           imageUrl: 'https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png',
-          status: 'Advance'
-        },
-        {
-          id: 12,
-          name: 'AlpineJS',
-          imageUrl: 'https://avatars.githubusercontent.com/u/59030169?s=200&v=4',
-          status: 'Beginner'
+          status: 'Advanced'
         }
       ],
       tools: [
@@ -128,7 +116,7 @@ export default {
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp; Hi everyone! My name is Gilang Mukharom. I'm a web developer from Cirebon, West Java. I
+            &nbsp; &nbsp; &nbsp; Hi everyone! My name is Gilang Mukharom as a web developer from Cirebon, West Java. I
             have 1 year of experience in Front-End web development.
             I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that
             has
