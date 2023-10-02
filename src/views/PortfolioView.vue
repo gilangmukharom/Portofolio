@@ -8,7 +8,7 @@ export default {
           id: 1,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
@@ -17,7 +17,7 @@ export default {
           id: 2,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
@@ -26,7 +26,7 @@ export default {
           id: 3,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
@@ -35,7 +35,7 @@ export default {
           id: 4,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
@@ -44,7 +44,7 @@ export default {
           id: 5,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar/'
@@ -53,7 +53,7 @@ export default {
           id: 6,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
