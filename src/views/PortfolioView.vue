@@ -11,7 +11,7 @@ export default {
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          demo: 'https://github.com/gilangmukharom/lingtar'
         },
         {
           id: 2,
@@ -20,7 +20,7 @@ export default {
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          demo: 'https://github.com/gilangmukharom/lingtar'
         },
         {
           id: 3,
@@ -29,7 +29,7 @@ export default {
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          demo: 'https://github.com/gilangmukharom/lingtar'
         },
         {
           id: 4,
@@ -38,7 +38,7 @@ export default {
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          demo: 'https://github.com/gilangmukharom/lingtar'
         },
         {
           id: 5,
@@ -47,7 +47,7 @@ export default {
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          demo: 'https://github.com/gilangmukharom/lingtar/'
         },
         {
           id: 6,
@@ -56,7 +56,7 @@ export default {
           status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
           tech: 'React, TypeTcript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://sahabat-muslim.netlify.app/'
+          demo: 'https://github.com/gilangmukharom/lingtar'
         }
       ]
     };
