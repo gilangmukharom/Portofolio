@@ -24,7 +24,7 @@ export default {
         },
         {
           id: 3,
-          name: 'Sipadeba',
+          name: 'Sipaldeba',
           imageUrl: 'desa',
           status: 'Website App to make it easier for village communities to carry out administrative matters from anywhere.',
           tech: 'Code Igniter 4, Bootstrap 5',
@@ -51,7 +51,7 @@ export default {
         },
         {
           id: 3,
-          name: 'Sipadeba',
+          name: 'Sipaldeba',
           imageUrl: 'desa',
           status: 'Website App to make it easier for village communities to carry out administrative matters from anywhere.',
           tech: 'Code Igniter 4, Bootstrap 5',
