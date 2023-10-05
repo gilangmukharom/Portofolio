@@ -9,7 +9,7 @@ export default {
           name: 'Lingtar',
           imageUrl: 'lingtar',
           status: 'Website App that has a responsive display to make it easier for parents control his child in school from anywhere.',
-          tech: 'React, TypeTcript',
+          tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
         },
@@ -36,7 +36,7 @@ export default {
           name: 'Lingtar',
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
-          tech: 'React, TypeTcript',
+          tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
         },
@@ -45,7 +45,7 @@ export default {
           name: 'Lingtar',
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
-          tech: 'React, TypeTcript',
+          tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar/'
         },
@@ -54,7 +54,7 @@ export default {
           name: 'Lingtar',
           imageUrl: 'lingtar',
           status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
-          tech: 'React, TypeTcript',
+          tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
         }
