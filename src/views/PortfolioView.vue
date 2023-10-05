@@ -32,31 +32,31 @@ export default {
           demo: 'https://github.com/gilangmukharom/Desa_CI4'
         },
         {
-          id: 4,
+          id: 1,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
+          status: 'Website App that has a responsive display to make it easier for parents control his child in school from anywhere.',
           tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
         },
         {
-          id: 5,
-          name: 'Lingtar',
-          imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
-          tech: 'React, TypeScript',
-          github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://github.com/gilangmukharom/lingtar/'
+          id: 2,
+          name: 'Yayasan Nur Asyiffa',
+          imageUrl: 'nursyifa',
+          status: 'Foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
+          tech: 'Code Igniter 4, Bootstrap 5',
+          github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
+          demo: 'https://github.com/gilangmukharom/Yayasan_Nursyifa'
         },
         {
-          id: 6,
-          name: 'Lingtar',
-          imageUrl: 'lingtar',
-          status: 'A website that has a responsive display to make it easier for parents control his child in school from anywhere.',
-          tech: 'React, TypeScript',
-          github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://github.com/gilangmukharom/lingtar'
+          id: 3,
+          name: 'Sipadeba',
+          imageUrl: 'desa',
+          status: 'Website App to make it easier for village communities to carry out administrative matters from anywhere.',
+          tech: 'Code Igniter 4, Bootstrap 5',
+          github: 'https://github.com/gilangmukharom/Desa_CI4',
+          demo: 'https://github.com/gilangmukharom/Desa_CI4'
         }
       ]
     };
