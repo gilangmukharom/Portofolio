@@ -17,7 +17,7 @@ export default {
           id: 2,
           name: 'Yayasan Nur Asyiffa',
           imageUrl: 'nursyifa',
-          status: 'Foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
+          status: 'Doctor foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
           tech: 'Code Igniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
           demo: 'https://github.com/gilangmukharom/Yayasan_Nursyifa'
