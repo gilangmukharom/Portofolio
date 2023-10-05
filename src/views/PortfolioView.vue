@@ -26,13 +26,13 @@ export default {
           id: 3,
           name: 'Sipaldeba',
           imageUrl: 'desa',
-          status: 'Website App to make it easier for village communities to carry out administrative matters from anywhere.',
+          status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
           tech: 'Code Igniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
           demo: 'https://github.com/gilangmukharom/Desa_CI4'
         },
         {
-          id: 1,
+          id: 4,
           name: 'Lingtar',
           imageUrl: 'lingtar',
           status: 'Website App that has a responsive display to make it easier for parents control his child in school from anywhere.',
@@ -41,7 +41,7 @@ export default {
           demo: 'https://github.com/gilangmukharom/lingtar'
         },
         {
-          id: 2,
+          id: 5,
           name: 'Yayasan Nur Asyiffa',
           imageUrl: 'nursyifa',
           status: 'Foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
@@ -50,10 +50,10 @@ export default {
           demo: 'https://github.com/gilangmukharom/Yayasan_Nursyifa'
         },
         {
-          id: 3,
+          id: 6,
           name: 'Sipaldeba',
           imageUrl: 'desa',
-          status: 'Website App to make it easier for village communities to carry out administrative matters from anywhere.',
+          status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
           tech: 'Code Igniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
           demo: 'https://github.com/gilangmukharom/Desa_CI4'
