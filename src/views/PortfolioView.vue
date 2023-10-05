@@ -8,7 +8,7 @@ export default {
           id: 1,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'Website App that has a responsive display to make it easier for parents control his child in school from anywhere.',
+          status: 'Website App that has a responsive display to make it easier for parents control his children in school from anywhere.',
           tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
@@ -35,7 +35,7 @@ export default {
           id: 4,
           name: 'Lingtar',
           imageUrl: 'lingtar',
-          status: 'Website App that has a responsive display to make it easier for parents control his child in school from anywhere.',
+          status: 'Website App that has a responsive display to make it easier for parents control his children in school from anywhere.',
           tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'https://github.com/gilangmukharom/lingtar'
