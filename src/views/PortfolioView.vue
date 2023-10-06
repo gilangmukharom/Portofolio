@@ -42,12 +42,12 @@ export default {
         },
         {
           id: 5,
-          name: 'Yayasan Nur Asyiffa',
-          imageUrl: 'nursyifa',
-          status: 'Foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
-          tech: 'Code Igniter 4, Bootstrap 5',
-          github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
-          demo: 'null'
+          name: 'Portofolio Website',
+          imageUrl: 'porto',
+          status: 'portfolio website to show my skill track record and my resume has a responsive layout and interactive display.',
+          tech: 'Vue',
+          github: 'https://github.com/gilangmukharom/portofolio',
+          demo: 'gilangmukharom.vercel.app'
         },
         {
           id: 6,
