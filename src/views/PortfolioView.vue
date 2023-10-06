@@ -11,7 +11,7 @@ export default {
           status: 'Website App that has a responsive display to make it easier for parents control his children in school from anywhere.',
           tech: 'React, TypeScript',
           github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://github.com/gilangmukharom/lingtar'
+          demo: 'null'
         },
         {
           id: 2,
@@ -29,16 +29,16 @@ export default {
           status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
           tech: 'Code Igniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
-          demo: 'https://github.com/gilangmukharom/Desa_CI4'
+          demo: 'null'
         },
         {
           id: 4,
-          name: 'Lingtar',
-          imageUrl: 'lingtar',
-          status: 'Website App that has a responsive display to make it easier for parents control his children in school from anywhere.',
-          tech: 'React, TypeScript',
-          github: 'https://github.com/gilangmukharom/lingtar',
-          demo: 'https://github.com/gilangmukharom/lingtar'
+          name: 'Candidate College',
+          imageUrl: 'cc',
+          status: 'Usefull website for candidate college which contains all information and activities related to the candidate college which already has a responsive and interactive layout.',
+          tech: 'React',
+          github: 'https://github.com/candidatecollege/candidate-college',
+          demo: 'https://candidatecollegeind.com/'
         },
         {
           id: 5,
@@ -47,7 +47,7 @@ export default {
           status: 'Foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
           tech: 'Code Igniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
-          demo: 'https://github.com/gilangmukharom/Yayasan_Nursyifa'
+          demo: 'null'
         },
         {
           id: 6,
@@ -56,7 +56,7 @@ export default {
           status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
           tech: 'Code Igniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
-          demo: 'https://github.com/gilangmukharom/Desa_CI4'
+          demo: 'null'
         }
       ]
     };
