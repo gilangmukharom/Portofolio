@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import { inject } from '@vercel/analytics';
 
 const routes = [
   {
@@ -49,5 +50,7 @@ router.beforeEach((to, from, next) => {
   document.title = to.meta.title + ' - <Gilang_Dev/>'; // Mengambil judul dari meta atau mengatur judul default jika tidak ada
   next();
 });
+
+inject();
 
 export default router

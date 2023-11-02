@@ -18,7 +18,7 @@ export default {
           name: 'Yayasan Nur Asyiffa',
           imageUrl: 'nursyifa',
           status: 'Doctor foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
-          tech: 'Code Igniter 4, Bootstrap 5',
+          tech: 'CodeIgniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
           demo: 'https://github.com/gilangmukharom/Yayasan_Nursyifa'
         },
@@ -27,7 +27,7 @@ export default {
           name: 'Sipaldeba',
           imageUrl: 'desa',
           status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
-          tech: 'Code Igniter 4, Bootstrap 5',
+          tech: 'CodeIgniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
           demo: 'null'
         },
@@ -45,7 +45,7 @@ export default {
           name: 'Portofolio Website',
           imageUrl: 'porto',
           status: 'portfolio website to show my skill track record and my resume has a responsive layout and interactive display.',
-          tech: 'Vue',
+          tech: 'Vue, Tailwind',
           github: 'https://github.com/gilangmukharom/portofolio',
           demo: 'gilangmukharom.vercel.app'
         },
