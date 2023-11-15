@@ -20,7 +20,7 @@ export default {
           status: 'Doctor foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
           tech: 'CodeIgniter 4, Bootstrap 5',
           github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
-          demo: 'https://github.com/gilangmukharom/Yayasan_Nursyifa'
+          demo: 'https://yayasannurassyifasamarinda.com/'
         },
         {
           id: 3,
