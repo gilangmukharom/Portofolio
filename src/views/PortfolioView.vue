@@ -9,7 +9,7 @@ export default {
           name: 'Lingtar',
           imageUrl: 'lingtar',
           status: 'Website App that has a responsive display to make it easier for parents control his children in school from anywhere.',
-          tech: 'React, TypeScript',
+          tech: 'React, TypeScript, (Internship Project)',
           github: 'https://github.com/gilangmukharom/lingtar',
           demo: 'null'
         },
@@ -18,7 +18,7 @@ export default {
           name: 'Yayasan Nur Asyiffa',
           imageUrl: 'nursyifa',
           status: 'Doctor foundation profile website which has CRUD on admin side for add or edit content and has a responsive layout.',
-          tech: 'CodeIgniter 4, Bootstrap 5',
+          tech: 'CodeIgniter 4, Bootstrap 5, (Freelance Project)',
           github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
           demo: 'https://yayasannurassyifasamarinda.com/'
         },
@@ -27,7 +27,7 @@ export default {
           name: 'Sipaldeba',
           imageUrl: 'desa',
           status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
-          tech: 'CodeIgniter 4, Bootstrap 5',
+          tech: 'CodeIgniter 4, Bootstrap 5, (Freelance Project)',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
           demo: 'null'
         },
@@ -36,7 +36,7 @@ export default {
           name: 'Candidate College',
           imageUrl: 'cc',
           status: 'Usefull website for candidate college which contains all information and activities related to the candidate college which already has a responsive and interactive layout.',
-          tech: 'React',
+          tech: 'React, CSS, (Internship Project)',
           github: 'https://github.com/candidatecollege/candidate-college',
           demo: 'https://candidatecollegeind.com/'
         },
@@ -45,7 +45,7 @@ export default {
           name: 'Portofolio Website',
           imageUrl: 'porto',
           status: 'portfolio website to show my skill track record and my resume has a responsive layout and interactive display.',
-          tech: 'Vue, Tailwind',
+          tech: 'Vue, Tailwind, (Portofolio Project)',
           github: 'https://github.com/gilangmukharom/portofolio',
           demo: 'gilangmukharom.vercel.app'
         },
@@ -54,7 +54,7 @@ export default {
           name: 'Sipaldeba',
           imageUrl: 'desa',
           status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
-          tech: 'Code Igniter 4, Bootstrap 5',
+          tech: 'Code Igniter 4, Bootstrap 5, (Freelance Project)',
           github: 'https://github.com/gilangmukharom/Desa_CI4',
           demo: 'null'
         }
