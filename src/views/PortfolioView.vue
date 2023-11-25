@@ -48,15 +48,6 @@ export default {
           tech: 'Vue, Tailwind, (Portofolio Project)',
           github: 'https://github.com/gilangmukharom/portofolio',
           demo: 'gilangmukharom.vercel.app'
-        },
-        {
-          id: 6,
-          name: 'Sipaldeba',
-          imageUrl: 'desa',
-          status: 'Website App to make it easier for public village to carry out administrative matters from anywhere.',
-          tech: 'Code Igniter 4, Bootstrap 5, (Freelance Project)',
-          github: 'https://github.com/gilangmukharom/Desa_CI4',
-          demo: 'null'
         }
       ]
     };
