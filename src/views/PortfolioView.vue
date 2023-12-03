@@ -48,6 +48,15 @@ export default {
           tech: 'Vue, Tailwind, (Portofolio Project)',
           github: 'https://github.com/gilangmukharom/portofolio',
           demo: 'gilangmukharom.vercel.app'
+        },
+        {
+          id: 6,
+          name: 'Rental Go',
+          imageUrl: 'rentalgo',
+          status: 'Rental Go is a website-based application for renting various items. It features a responsive design, making it highly useful for connecting renters with users who want to rent items through Rental Go.',
+          tech: 'React JS, Tailwind, (Mini Project)',
+          github: 'https://github.com/gilangmukharom/frontend-rjs',
+          demo: 'null'
         }
       ]
     };
