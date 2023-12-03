@@ -38,7 +38,7 @@ export default {
           status: 'Usefull website for candidate college which contains all information and activities related to the candidate college which already has a responsive and interactive layout.',
           tech: 'React, CSS, (Internship Project)',
           github: 'https://github.com/candidatecollege/candidate-college',
-          demo: 'https://candidatecollegeind.com/'
+          demo: 'https://candidate-college.vercel.app/'
         },
         {
           id: 5,
