@@ -30,8 +30,8 @@ export default {
         },
         {
           id: 5,
-          name: 'Codeigniter',
-          imageUrl: 'https://cdn-peanutsquare.b-cdn.net/wp-content/uploads/2022/11/codeigniter-logo.png',
+          name: 'Laravel',
+          imageUrl: 'img/laravel.png',
           status: 'Intermediate'
         },
         {
@@ -88,6 +88,12 @@ export default {
           id: 4,
           name: 'MySQL',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968313.png',
+          status: 'Database'
+        },
+        {
+          id: 5,
+          name: 'Postgree SQL',
+          imageUrl: 'img/postgree.png',
           status: 'Database'
         },
       ]
