@@ -50,7 +50,8 @@ export default {
   },
   methods: {
     downloadPDF() {
-      const pdfURL = 'https://drive.google.com/file/d/1u4AIE59VO56llF5OdQ5CXxPseHX5E68t/view?usp=sharing';
+      // const pdfURL = 'https://drive.google.com/file/d/1u4AIE59VO56llF5OdQ5CXxPseHX5E68t/view?usp=sharing';
+      const pdfURL = '';
 
       const a = document.createElement('a');
       a.href = pdfURL;
