@@ -89,14 +89,9 @@ export default {
     async getArticles() {
       try {
         this.loading = true;
-        const apiKey = "49bfc2718cf8458e9c0b402e8e8ee51b";
-        const res = await axios.get('/newsapi/everything', {
+        const res = await axios.get('/api/news', {
           params: {
-            q: this.activeTopic.value || 'technology',
-            language: 'id',
-            sortBy: 'publishedAt',
-            pageSize: 10,
-            apiKey
+            topic: this.activeTopic.value || 'technology'
           }
         });
 
@@ -122,6 +117,7 @@ export default {
       this.getArticles();
     }
   }
+
 };
 </script>
 
