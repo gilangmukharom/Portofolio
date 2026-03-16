@@ -90,7 +90,7 @@ export default {
       try {
         this.loading = true;
         const apiKey = "49bfc2718cf8458e9c0b402e8e8ee51b";
-        const res = await axios.get('https://newsapi.org/v2/everything', {
+        const res = await axios.get('/newsapi/everything', {
           params: {
             q: this.activeTopic.value || 'technology',
             language: 'id',
