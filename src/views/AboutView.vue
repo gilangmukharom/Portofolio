@@ -6,63 +6,75 @@ export default {
       tech: [
         {
           id: 1,
-          name: 'HTML',
-          imageUrl: 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png',
-          status: 'Advanced'
+          name: 'ReactJS',
+          imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
+          status: 'Frontend Stack'
         },
         {
           id: 2,
-          name: 'CSS',
-          imageUrl: 'https://cdn-icons-png.flaticon.com/512/732/732190.png',
-          status: 'Advanced'
+          name: 'NextJS',
+          imageUrl: 'https://img.icons8.com/fluency/48/nextjs.png',
+          status: 'Fullstack'
         },
         {
           id: 3,
-          name: 'PHP',
-          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-php-2038871-1720084.png',
-          status: 'Advanced'
+          name: 'Material UI',
+          imageUrl: 'https://img.icons8.com/color/48/material-ui.png',
+          status: 'Frontend Library'
         },
         {
           id: 4,
-          name: 'Javascript',
-          imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png',
-          status: 'Advanced'
+          name: 'SCSS',
+          imageUrl: 'https://img.icons8.com/external-creatype-filed-outline-colourcreatype/64/external-document-file-extension-web-format-file-creatype-filed-outline-colourcreatype-8.png',
+          status: 'Frontend Stack'
         },
         {
           id: 5,
-          name: 'Laravel',
-          imageUrl: 'img/laravel.png',
-          status: 'Intermediate'
+          name: 'Express JS',
+          imageUrl: 'https://img.icons8.com/nolan/64/express-js.png',
+          status: 'Backend Stack'
         },
         {
           id: 6,
-          name: 'VueJS',
-          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-vue-282497.png?f=webp',
-          status: 'Intermediate'
+          name: 'Prisma ORM',
+          imageUrl: 'https://img.icons8.com/color/48/prisma-orm.png',
+          status: 'Database ORM'
         },
         {
           id: 7,
-          name: 'ReactJS',
-          imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
-          status: 'Intermediate'
+          name: 'Javascript',
+          imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png',
+          status: 'Fullstack'
         },
         {
           id: 8,
-          name: 'TypeScript',
-          imageUrl: 'img/typescript.png',
-          status: 'Intermediate'
+          name: 'Laravel',
+          imageUrl: 'img/laravel.png',
+          status: 'Fullstack'
         },
         {
           id: 9,
-          name: 'Tailwind',
-          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
-          status: 'Intermediate'
+          name: 'TypeScript',
+          imageUrl: 'img/typescript.png',
+          status: 'Fullstack'
         },
         {
           id: 10,
-          name: 'Bootstrap',
-          imageUrl: 'https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png',
-          status: 'Advanced'
+          name: 'Tailwind',
+          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+          status: 'Frontend Stack'
+        },
+        {
+          id: 11,
+          name: 'Postgree SQL',
+          imageUrl: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png',
+          status: 'Database Stack'
+        },
+        {
+          id: 12,
+          name: 'MySQL',
+          imageUrl: 'https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-mysql-an-open-source-relational-database-management-system-logo-shadow-tal-revivo.png',
+          status: 'Database Stack'
         }
       ],
       tools: [
@@ -75,8 +87,8 @@ export default {
         {
           id: 2,
           name: 'GitHub',
-          imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-          status: 'Git Hosting'
+          imageUrl: 'https://img.icons8.com/glyph-neue/64/github.png',
+          status: 'Version Control'
         },
         {
           id: 3,
@@ -86,16 +98,22 @@ export default {
         },
         {
           id: 4,
-          name: 'MySQL',
-          imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968313.png',
-          status: 'Database'
+          name: 'Yarn',
+          imageUrl: 'img/yarn.png',
+          status: 'Package Manager'
         },
         {
           id: 5,
-          name: 'Postgree SQL',
-          imageUrl: 'img/postgree.png',
-          status: 'Database'
+          name: 'Docker',
+          imageUrl: 'https://img.icons8.com/fluency/48/docker.png',
+          status: 'Containerization'
         },
+        {
+          id: 6,
+          name: 'VS Code',
+          imageUrl: 'https://img.icons8.com/fluency/96/visual-studio-code-2019.png',
+          status: 'IDE'
+        }
       ]
     };
   }
@@ -117,26 +135,24 @@ export default {
       <section
         class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">
         <div class="flex justify-center">
-          <img class="w-9/12 rounded-full mb-3 fadein-up"
-            src="/img/profile_resizes.jpg" alt="Foto">
+          <img class="w-9/12 rounded-full mb-3 fadein-up" src="/img/profile_resizes.jpg" alt="Foto">
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp; Hi everyone! My name is Gilang Mukharom as a web developer from Cirebon, West Java. I
-            have 1 year of experience in Front-End web development.
-            I really enjoy what I do right now, in my opinion, creating programs is not just a job, but also an art that
-            has
-            aesthetic value
+            &nbsp; &nbsp; &nbsp; Hi! I’m Gilang Mukharom, a Software Engineer based in Tangerang, Indonesia.
+            For the past 2+ years I’ve been building enterprise web applications for Garuda Indonesia, including
+            Internet Booking Engine (IBE), CMS, and Loyalty Program platforms using React, TypeScript, Laravel, Express
+            JS, PostgreSQL, and Prisma.
           </p>
           <p class="mb-3 fadein-left fadeins-2">
-            &nbsp; &nbsp; &nbsp; My job is to build your website to be functional and user-friendly yet still attractive.
-            In addition, I provide a personal touch to your product and ensure that the website catches attention and is
-            easy to use.
-            My goal is to convey your message and identity in the most creative way. If you are interested in hiring me,
-            please contact the listed contact.
+            &nbsp; &nbsp; &nbsp; I enjoy turning complex problems into reliable, fast, and intuitive web applications
+            and backend services.
+            I design and ship RESTful APIs with Express JS and Prisma, connect them to modern frontend stacks, and work
+            closely with cross‑functional teams in Agile environments to deliver smooth, end‑to‑end user experiences.
+            My focus is on helping businesses launch products that are robust, maintainable, and actually pleasant to
+            use.
           </p>
         </div>
-
       </section>
 
     </article>
@@ -156,11 +172,13 @@ export default {
           <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5">
             <li class="mr-2">
               <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
+                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech
+                Stack</button>
             </li>
             <li class="mr-2">
               <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2 }" @click="activeTab = 2">Tools</button>
+                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2 }"
+                @click="activeTab = 2">Tools</button>
             </li>
           </ul>
         </div>
@@ -175,7 +193,8 @@ export default {
                     :src="item.imageUrl" style="color: transparent;">
                 </div>
                 <div class="flex items-center text-sm md:text-base lg:text-lg">
-                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
+                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name
+                  }}
                   </div>
                   <div
                     class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
@@ -196,7 +215,8 @@ export default {
                     :src="item.imageUrl" style="color: transparent;">
                 </div>
                 <div class="flex items-center text-sm md:text-base lg:text-lg">
-                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
+                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name
+                  }}
                   </div>
                   <div
                     class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">

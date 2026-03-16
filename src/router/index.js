@@ -22,10 +22,10 @@ const routes = [
     meta: { title: 'Portfolio' }
   },
   {
-    path: '/blog',
-    name: 'blog',
-    component: () => import('../views/BlogView.vue'),
-    meta: { title: 'Blog' }
+    path: '/news',
+    name: 'news',
+    component: () => import('../views/NewsView.vue'),
+    meta: { title: 'News' }
   },
   {
     path: '/contact',
@@ -37,7 +37,7 @@ const routes = [
     path: '/read/:slug/:id',
     name: 'articleDetail',
     component: () => import('../views/ArticleView.vue'),
-    meta: { title: 'Blog' }
+    meta: { title: 'News' }
   }
 ]
 
