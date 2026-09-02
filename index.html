@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <title>Gilang Mukharom — Software Engineer</title>
+    <meta
+      name="description"
+      content="Gilang Mukharom is a software engineer in Tangerang, Indonesia, building both halves of the product — React and TypeScript on the front end, Express, Prisma and PostgreSQL behind it."
+    />
+    <meta name="author" content="Gilang Mukharom" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gilang Mukharom — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer building both halves of the product: React and TypeScript on the front end, Express, Prisma and PostgreSQL behind it."
+    />
+    <meta property="og:image" content="/img/profile_resizes.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Resolve the theme before first paint so dark mode never flashes light.
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var dark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (_) {
+          /* private mode / storage blocked — fall through to the light default */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
