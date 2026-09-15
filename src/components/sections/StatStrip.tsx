@@ -1,7 +1,8 @@
-import { stats } from '@/data/profile'
+import { useContent } from '@/content/ContentProvider'
 import { useReveal } from '@/hooks/useReveal'
 
 export function StatStrip() {
+  const { stats } = useContent()
   const { ref, className } = useReveal<HTMLElement>()
 
   return (

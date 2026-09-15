@@ -1,15 +1,17 @@
 import { NavLink } from 'react-router-dom'
+import { useContent } from '@/content/ContentProvider'
 import { cn } from '@/lib/cn'
-import { navLinks } from './navigation'
 
 export function MobileTabBar() {
+  const { nav } = useContent()
+
   return (
     <nav
       aria-label="Main"
       className="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-bg/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-lg md:hidden"
     >
       <ul className="flex items-stretch justify-around">
-        {navLinks.map((link) => (
+        {nav.map((link) => (
           <li key={link.to} className="flex-1">
             <NavLink
               to={link.to}

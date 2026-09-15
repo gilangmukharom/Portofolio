@@ -1,22 +1,36 @@
 import { Suspense, lazy } from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
+import { useContent } from '@/content/ContentProvider'
 import { Footer } from '@/components/layout/Footer'
 import { MobileTabBar } from '@/components/layout/MobileTabBar'
 import { Navbar } from '@/components/layout/Navbar'
 import Home from '@/pages/Home'
 
-// Home ships in the main bundle; the rest load on navigation.
 const About = lazy(() => import('@/pages/About'))
 const Work = lazy(() => import('@/pages/Work'))
 const News = lazy(() => import('@/pages/News'))
 const NotFound = lazy(() => import('@/pages/NotFound'))
+const AdminApp = lazy(() => import('@/admin/AdminApp'))
 
 function RouteFallback() {
   return <div className="min-h-[70vh]" aria-hidden="true" />
 }
 
 export default function App() {
+  const { pathname } = useLocation()
+  const { settings } = useContent()
+
+  if (pathname.startsWith('/admin')) {
+    return (
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          <Route path="/admin/*" element={<AdminApp />} />
+        </Routes>
+      </Suspense>
+    )
+  }
+
   return (
     <>
       <a
@@ -25,6 +39,16 @@ export default function App() {
       >
         Skip to content
       </a>
+
+      {/* Flipped from the CMS, so the notice needs no redeploy. */}
+      {settings?.maintenanceMode && (
+        <p
+          role="status"
+          className="bg-accent px-5 py-2 text-center text-sm font-medium text-accent-contrast"
+        >
+          This site is being updated — some content may be out of date.
+        </p>
+      )}
 
       <Navbar />
 

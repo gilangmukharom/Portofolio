@@ -1,10 +1,11 @@
 import { Link, NavLink } from 'react-router-dom'
-import { profile } from '@/data/profile'
+import { useContent } from '@/content/ContentProvider'
 import { cn } from '@/lib/cn'
 import { ThemeToggle } from './ThemeToggle'
-import { navLinks } from './navigation'
 
 export function Navbar() {
+  const { profile, nav } = useContent()
+
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-bg/80 backdrop-blur-lg">
       <nav
@@ -20,7 +21,7 @@ export function Navbar() {
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
-          {navLinks.map((link) => (
+          {nav.map((link) => (
             <li key={link.to}>
               <NavLink
                 to={link.to}

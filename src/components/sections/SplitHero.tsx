@@ -1,16 +1,15 @@
-import { profile } from '@/data/profile'
+import { useBlock, useProfile } from '@/content/ContentProvider'
 import { useRotatingWord } from '@/hooks/useRotatingWord'
 import { Annotation } from '@/components/ui/Annotation'
+import type { HeroHalf } from '@/types'
 import { ButtonAnchor, ButtonLink } from '@/components/ui/Button'
-
-const { halves } = profile
 
 /**
  * The reference site's signature move: one portrait split down the middle to
  * stand for two skill sets. Both halves are the same file — `clip-path` shows
  * one vertical half of each, and a different filter gives each half its mood.
  */
-function SplitPortrait() {
+function SplitPortrait({ avatar, alt }: { avatar: string; alt: string }) {
   // The source is a wide shot, so zoom onto the face — otherwise the "split
   // face" reads as a split landscape. Clipping lives on the wrappers and the
   // zoom on the images: a transform on a clipped element would scale the clip
@@ -23,8 +22,8 @@ function SplitPortrait() {
         {/* Left half — front end, warm. */}
         <div className="absolute inset-0 [clip-path:inset(0_50%_0_0)]">
           <img
-            src={profile.avatar}
-            alt={`${profile.name}, ${profile.role}`}
+            src={avatar}
+            alt={alt}
             width={500}
             height={500}
             fetchPriority="high"
@@ -37,7 +36,7 @@ function SplitPortrait() {
             left image only, so this one is decorative to avoid a duplicate. */}
         <div className="absolute inset-0 [clip-path:inset(0_0_0_50%)]">
           <img
-            src={profile.avatar}
+            src={avatar}
             alt=""
             aria-hidden="true"
             width={500}
@@ -57,9 +56,7 @@ function SplitPortrait() {
   )
 }
 
-function HalfStack({ side }: { side: 'left' | 'right' }) {
-  const half = side === 'left' ? halves.left : halves.right
-
+function HalfStack({ side, half }: { side: 'left' | 'right'; half: HeroHalf }) {
   return (
     <ul
       className={`flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium text-muted ${
@@ -74,6 +71,9 @@ function HalfStack({ side }: { side: 'left' | 'right' }) {
 }
 
 export function SplitHero() {
+  const profile = useProfile()
+  const block = useBlock('home.hero')
+  const { halves } = profile
   const word = useRotatingWord(profile.roles)
 
   return (
@@ -82,14 +82,14 @@ export function SplitHero() {
         {/* Left annotation — hidden on small screens where there's no room. */}
         <div className="hidden flex-col items-start gap-3 lg:flex">
           <Annotation label={halves.left.label} caption={halves.left.caption} side="left" />
-          <HalfStack side="left" />
+          <HalfStack side="left" half={halves.left} />
         </div>
 
-        <SplitPortrait />
+        <SplitPortrait avatar={profile.avatar} alt={`${profile.name}, ${profile.role}`} />
 
         <div className="hidden flex-col items-end gap-3 lg:flex">
           <Annotation label={halves.right.label} caption={halves.right.caption} side="right" />
-          <HalfStack side="right" />
+          <HalfStack side="right" half={halves.right} />
         </div>
       </div>
 
@@ -130,9 +130,11 @@ export function SplitHero() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-          <ButtonLink to="/work">View my work</ButtonLink>
-          <ButtonAnchor href={profile.resumeUrl} variant="ghost">
-            Read my resume
+          <ButtonLink to={block.primary?.href ?? '/work'}>
+            {block.primary?.label ?? 'View my work'}
+          </ButtonLink>
+          <ButtonAnchor href={block.secondary?.href || profile.resumeUrl} variant="ghost">
+            {block.secondary?.label ?? 'Read my resume'}
             <svg
               viewBox="0 0 24 24"
               className="h-4 w-4"

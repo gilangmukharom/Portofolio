@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
-import { profile } from '@/data/profile'
-import { featuredProjects } from '@/data/projects'
-import { marqueeLogos } from '@/data/skills'
+import {
+  useBlock,
+  useContent,
+  useFeaturedProjects,
+  useProfile,
+} from '@/content/ContentProvider'
 import { PageShell } from '@/components/layout/PageShell'
 import { Marquee } from '@/components/ui/Marquee'
 import { SectionHeading } from '@/components/ui/SectionHeading'
@@ -11,13 +14,19 @@ import { SplitHero } from '@/components/sections/SplitHero'
 import { StatStrip } from '@/components/sections/StatStrip'
 
 export default function Home() {
+  const profile = useProfile()
+  const { skills } = useContent()
+  const featuredProjects = useFeaturedProjects()
+  const selectedWork = useBlock('home.selected_work')
+  const aboutTeaser = useBlock('home.about')
+
   return (
     <PageShell title="Home">
       <SplitHero />
 
       <div className="border-y border-line">
         <div className="mx-auto max-w-content px-5 md:px-8">
-          <Marquee items={marqueeLogos} />
+          <Marquee items={skills} />
         </div>
       </div>
 
@@ -26,15 +35,15 @@ export default function Home() {
       <section className="mx-auto max-w-content px-5 md:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
-            eyebrow="Selected work"
-            title="A few things I've shipped"
-            description="Products taken from an empty repository to something real people use."
+            eyebrow={selectedWork.eyebrow ?? ''}
+            title={selectedWork.title ?? ''}
+            description={selectedWork.description ?? undefined}
           />
           <Link
-            to="/work"
+            to={selectedWork.primary?.href ?? '/work'}
             className="shrink-0 text-sm font-semibold text-muted underline decoration-line underline-offset-8 transition-colors duration-300 hover:text-fg hover:decoration-accent"
           >
-            See all projects →
+            {selectedWork.primary?.label} →
           </Link>
         </div>
 
@@ -47,15 +56,15 @@ export default function Home() {
 
       <section className="mx-auto max-w-content px-5 py-24 md:px-8 md:py-32">
         <SectionHeading
-          eyebrow="About"
-          title="Two halves of the same engineer"
-          description={profile.bio[0]}
+          eyebrow={aboutTeaser.eyebrow ?? ''}
+          title={aboutTeaser.title ?? ''}
+          description={aboutTeaser.description ?? profile.bio[0]}
         />
         <Link
-          to="/about"
+          to={aboutTeaser.primary?.href ?? '/about'}
           className="mt-8 inline-block text-sm font-semibold text-muted underline decoration-line underline-offset-8 transition-colors duration-300 hover:text-fg hover:decoration-accent"
         >
-          More about me →
+          {aboutTeaser.primary?.label} →
         </Link>
       </section>
 

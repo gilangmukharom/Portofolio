@@ -34,7 +34,7 @@ export function ProjectCard({ project }: { project: Project }) {
       >
         {shouldLoad ? (
           <img
-            src={`/img/${project.media}`}
+            src={project.media}
             alt={`${project.name} preview`}
             loading="lazy"
             decoding="async"

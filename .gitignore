@@ -1,27 +1,44 @@
-.DS_Store
-node_modules
+# Dependencies
+node_modules/
+
+# Build output
 /dist
+*.tsbuildinfo
 
-
-# local env files
+# Environment and secrets.
+# `.env.*` is broad on purpose: .env.production is just as sensitive as .env,
+# and only the example file is safe to publish.
 .env
-.env.local
-.env.*.local
+.env.*
 !.env.example
+*.pem
+*.key
 
-# Log files
+# Deployment
+.vercel
+
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
-.idea
-.vscode
+# Caches and coverage
+coverage/
+.cache/
+.turbo/
+
+# Editors
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.vercel
-.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

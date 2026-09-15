@@ -1,14 +1,26 @@
 import { useMemo, useState } from 'react'
-import { projects, projectTypes, type ProjectFilter } from '@/data/projects'
+import { useBlock, useContent } from '@/content/ContentProvider'
 import { cn } from '@/lib/cn'
 import { ProjectCard } from './ProjectCard'
 
 export function ProjectGrid() {
-  const [filter, setFilter] = useState<ProjectFilter>('All')
+  const { projects } = useContent()
+  const labels = useBlock('ui.project_filter')
+  const [filter, setFilter] = useState('All')
+
+  // The first label is the catch-all; the CMS can rename it, so "show
+  // everything" is decided by position rather than by the word "All".
+  const [allLabel = 'All', ...typeLabels] = labels.body
+
+  const projectTypes = useMemo(() => {
+    // Only offer a filter for types that actually have a published project.
+    const present = new Set(projects.map((project) => project.type as string))
+    return [allLabel, ...typeLabels.filter((label) => present.has(label))]
+  }, [projects, allLabel, typeLabels])
 
   const visible = useMemo(
-    () => (filter === 'All' ? projects : projects.filter((project) => project.type === filter)),
-    [filter],
+    () => (filter === allLabel ? projects : projects.filter((project) => project.type === filter)),
+    [projects, filter, allLabel],
   )
 
   return (

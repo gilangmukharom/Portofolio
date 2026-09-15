@@ -1,12 +1,24 @@
 import { useMemo, useState } from 'react'
-import { skillGroups, skills } from '@/data/skills'
+import { useBlock, useContent } from '@/content/ContentProvider'
 import { cn } from '@/lib/cn'
 import type { SkillGroup } from '@/types'
 
 export function SkillsGrid() {
+  const { skills } = useContent()
+  const labels = useBlock('ui.skill_groups')
   const [group, setGroup] = useState<SkillGroup>('stack')
 
-  const visible = useMemo(() => skills.filter((skill) => skill.group === group), [group])
+  // Labels are editable; the ids they map to are not, so they pair by position.
+  const skillGroups = useMemo(
+    () =>
+      (['stack', 'tools'] as const).map((id, index) => ({
+        id,
+        label: labels.body[index] ?? (id === 'stack' ? 'Tech stack' : 'Tools'),
+      })),
+    [labels],
+  )
+
+  const visible = useMemo(() => skills.filter((skill) => skill.group === group), [skills, group])
 
   return (
     <div>

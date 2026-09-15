@@ -1,33 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
+import { fetchJson } from '@/lib/api'
 import type { Article, Topic } from '@/types'
 
-interface NewsApiArticle {
-  title: string | null
-  description: string | null
-  publishedAt: string | null
-  urlToImage: string | null
-  url: string
-  source?: { name?: string | null }
-}
-
 type Status = 'idle' | 'loading' | 'error'
-
-/** NewsAPI keeps pulled articles in the payload; they render as empty cards. */
-function isUsable(article: NewsApiArticle) {
-  return Boolean(article.url) && article.title !== null && article.title !== '[Removed]'
-}
-
-function normalise(article: NewsApiArticle, index: number): Article {
-  return {
-    id: `${article.url}-${index}`,
-    title: article.title ?? 'Untitled',
-    description: article.description ?? '',
-    publishedAt: article.publishedAt ?? '',
-    imageUrl: article.urlToImage,
-    url: article.url,
-    source: article.source?.name ?? 'Unknown source',
-  }
-}
 
 export function useNews(topic: Topic) {
   const [articles, setArticles] = useState<Article[]>([])
@@ -40,24 +15,21 @@ export function useNews(topic: Topic) {
     const controller = new AbortController()
     setStatus('loading')
 
-    const run = async () => {
+    void (async () => {
       try {
-        const response = await fetch(`/api/news?topic=${encodeURIComponent(topic.value)}`, {
-          signal: controller.signal,
-        })
-        if (!response.ok) throw new Error(`Request failed with ${response.status}`)
-
-        const data = (await response.json()) as { articles?: NewsApiArticle[] }
-        setArticles((data.articles ?? []).filter(isUsable).map(normalise))
+        const data = await fetchJson<Article[]>(
+          `/news?topic=${encodeURIComponent(topic.value)}`,
+          { signal: controller.signal },
+        )
+        setArticles(data)
         setStatus('idle')
       } catch (error) {
         if (controller.signal.aborted || (error as Error)?.name === 'AbortError') return
         setArticles([])
         setStatus('error')
       }
-    }
+    })()
 
-    void run()
     return () => controller.abort()
   }, [topic.value, attempt])
 

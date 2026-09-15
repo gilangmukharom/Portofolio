@@ -1,16 +1,10 @@
 import { useState } from 'react'
+import { useBlock, useContent } from '@/content/ContentProvider'
 import { useNews } from '@/hooks/useNews'
 import { PageShell } from '@/components/layout/PageShell'
 import { ArticleSkeleton } from '@/components/ui/Skeleton'
 import { cn } from '@/lib/cn'
 import type { Article, Topic } from '@/types'
-
-const topics: Topic[] = [
-  { label: 'Technology', value: 'technology' },
-  { label: 'Programming', value: 'programming' },
-  { label: 'AI & Machine Learning', value: 'ai OR machine learning' },
-  { label: 'JS & TypeScript', value: 'javascript OR typescript' },
-]
 
 function formatDate(value: string) {
   if (!value) return ''
@@ -62,19 +56,24 @@ function ArticleRow({ article }: { article: Article }) {
 }
 
 export default function News() {
-  const [topic, setTopic] = useState<Topic>(topics[0])
-  const { articles, status, retry } = useNews(topic)
+  const { topics } = useContent()
+  const hero = useBlock('news.hero')
+  const [topic, setTopic] = useState<Topic | null>(null)
+
+  // The topic list arrives with the rest of the content, so the selection
+  // defaults to whichever topic the CMS puts first.
+  const active = topic ?? topics[0]
+  const { articles, status, retry } = useNews(active)
 
   return (
     <PageShell title="News">
       <section className="mx-auto max-w-content px-5 pt-16 md:px-8 md:pt-24">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Reading</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{hero.eyebrow}</p>
         <h1 className="mt-5 max-w-3xl text-display font-extrabold text-balance">
-          What the industry is talking about
+          {hero.title}
         </h1>
         <p className="mt-6 max-w-prose text-lg leading-relaxed text-muted">
-          A live feed of updates, tutorials and trends from the tech world. Pick a topic — every
-          headline links straight to the original source.
+          {hero.description}
         </p>
 
         <div
@@ -83,7 +82,7 @@ export default function News() {
           aria-label="Filter articles by topic"
         >
           {topics.map((option) => {
-            const isActive = option.value === topic.value
+            const isActive = option.value === active.value
             return (
               <button
                 key={option.value}
@@ -130,7 +129,7 @@ export default function News() {
 
           {status === 'idle' && articles.length === 0 && (
             <div className="rounded-2xl border border-line bg-surface p-10 text-center">
-              <p className="font-semibold">Nothing published under “{topic.label}” right now.</p>
+              <p className="font-semibold">Nothing published under “{active.label}” right now.</p>
               <p className="mt-2 text-sm text-muted">Try another topic.</p>
             </div>
           )}
