@@ -6,7 +6,9 @@
  * `/auth/refresh` rather than reading a token out of localStorage.
  */
 
-const BASE = import.meta.env.VITE_API_URL ?? '/api/v1'
+import { API_BASE } from '@/lib/api-base'
+
+const BASE = API_BASE
 
 let accessToken: string | null = null
 let onUnauthorised: (() => void) | null = null

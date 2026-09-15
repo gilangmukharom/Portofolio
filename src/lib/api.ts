@@ -1,10 +1,12 @@
+import { API_BASE } from './api-base'
+
 /**
  * Read-only client for the CMS's public API.
  *
- * In development Vite proxies /api to the CMS, so the default base URL is
- * relative. In production set VITE_API_URL to the deployed API's origin.
+ * In development Vite proxies /api to the CMS, so the base URL stays relative.
+ * In production VITE_API_URL must point at the deployed API.
  */
-const BASE = import.meta.env.VITE_API_URL?.replace(/\/$/, '') ?? '/api/v1'
+const BASE = API_BASE
 
 export class ApiError extends Error {
   readonly status: number
