@@ -26,7 +26,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   const push = useCallback((tone: Toast['tone'], message: string) => {
     const id = nextId++
     setToasts((current) => [...current, { id, tone, message }])
-    // Errors linger longer — they usually need reading, not just noticing.
+    // Errors linger longer - they usually need reading, not just noticing.
     setTimeout(() => setToasts((current) => current.filter((t) => t.id !== id)),
       tone === 'error' ? 6000 : 3000)
   }, [])

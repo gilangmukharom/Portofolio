@@ -46,7 +46,7 @@ export default function App() {
           role="status"
           className="bg-accent px-5 py-2 text-center text-sm font-medium text-accent-contrast"
         >
-          This site is being updated — some content may be out of date.
+          This site is being updated - some content may be out of date.
         </p>
       )}
 
@@ -58,7 +58,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
-            {/* The Vue site used /portfolio — keep old links alive. */}
+            {/* The Vue site used /portfolio - keep old links alive. */}
             <Route path="/portfolio" element={<Navigate to="/work" replace />} />
             <Route path="/news" element={<News />} />
             <Route path="*" element={<NotFound />} />

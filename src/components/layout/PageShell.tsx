@@ -14,7 +14,7 @@ export function PageShell({ title, children }: { title: string; children: ReactN
   const site = settings?.siteTitle ?? profile.name
 
   useEffect(() => {
-    document.title = `${title} — ${site}`
+    document.title = `${title} - ${site}`
   }, [title, site])
 
   useEffect(() => {

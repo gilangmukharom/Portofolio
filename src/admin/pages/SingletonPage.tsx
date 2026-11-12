@@ -28,7 +28,7 @@ export default function SingletonPage() {
       setValues({ ...emptyValues(singleton.fields), ...row })
     } catch (error) {
       if (error instanceof ApiError && error.status === 404) {
-        // Nothing seeded yet — start from a blank form rather than an error.
+        // Nothing seeded yet - start from a blank form rather than an error.
         setValues(emptyValues(singleton.fields))
       } else {
         toast.error(error instanceof ApiError ? error.message : 'Could not load')

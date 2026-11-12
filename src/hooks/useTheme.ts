@@ -32,7 +32,7 @@ export function useTheme() {
     try {
       localStorage.setItem(STORAGE_KEY, theme)
     } catch {
-      // Preference simply won't persist — the UI still works this session.
+      // Preference simply won't persist - the UI still works this session.
     }
   }, [theme])
 

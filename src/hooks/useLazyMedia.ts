@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 /**
- * Project previews are animated GIFs — several megabytes each. Holding the `src`
+ * Project previews are animated GIFs - several megabytes each. Holding the `src`
  * back until the card is near the viewport keeps the initial page weight small
  * instead of downloading every preview on load.
  */

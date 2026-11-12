@@ -64,7 +64,7 @@ export default function Dashboard() {
                 <span className="block truncate text-xs text-muted">{collection.description}</span>
               </span>
               <span className="ml-auto shrink-0 rounded-full bg-bg px-2.5 py-1 text-xs font-medium text-muted">
-                {counts[collection.name] ?? '—'}
+                {counts[collection.name] ?? '-'}
               </span>
             </Link>
           </li>

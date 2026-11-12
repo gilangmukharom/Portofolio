@@ -36,7 +36,7 @@ export default defineConfig(({ mode, command }) => {
 
   if (command === 'build') assertApiUrl(mode, env.VITE_API_URL)
 
-  // Everything dynamic on this site — content, media and the news feed — comes
+  // Everything dynamic on this site - content, media and the news feed - comes
   // from the CMS API. In development it runs on localhost:4000.
   const apiTarget = env.CMS_PROXY_TARGET || 'http://localhost:4000'
 

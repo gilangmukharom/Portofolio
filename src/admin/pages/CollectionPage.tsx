@@ -299,7 +299,7 @@ export default function CollectionPage() {
                             {value ? 'Yes' : 'No'}
                           </span>
                         ) : (
-                          String(value ?? '—')
+                          String(value ?? '-')
                         )}
                       </td>
                     )

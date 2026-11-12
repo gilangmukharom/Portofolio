@@ -1,7 +1,7 @@
 /**
  * One declarative description per content type. The list page, the form and
  * the payload sent to the API are all derived from these definitions, so a new
- * content type means an entry here plus a Prisma model — not a new screen.
+ * content type means an entry here plus a Prisma model - not a new screen.
  */
 
 import type { IconName } from '@/admin/components/Icon'
@@ -100,12 +100,12 @@ export const singletons: SingletonDef[] = [
         wide: true,
         help: 'Rendered in order on the About page. The first also appears on the home page.',
       },
-      { name: 'leftLabel', label: 'Hero left — label', kind: 'text', required: true },
-      { name: 'leftCaption', label: 'Hero left — caption', kind: 'text', required: true },
-      { name: 'leftStack', label: 'Hero left — stack', kind: 'list', wide: true },
-      { name: 'rightLabel', label: 'Hero right — label', kind: 'text', required: true },
-      { name: 'rightCaption', label: 'Hero right — caption', kind: 'text', required: true },
-      { name: 'rightStack', label: 'Hero right — stack', kind: 'list', wide: true },
+      { name: 'leftLabel', label: 'Hero left - label', kind: 'text', required: true },
+      { name: 'leftCaption', label: 'Hero left - caption', kind: 'text', required: true },
+      { name: 'leftStack', label: 'Hero left - stack', kind: 'list', wide: true },
+      { name: 'rightLabel', label: 'Hero right - label', kind: 'text', required: true },
+      { name: 'rightCaption', label: 'Hero right - caption', kind: 'text', required: true },
+      { name: 'rightStack', label: 'Hero right - stack', kind: 'list', wide: true },
     ],
   },
   {
@@ -291,10 +291,10 @@ export const collections: CollectionDef[] = [
       { name: 'title', label: 'Heading', kind: 'text', wide: true },
       { name: 'description', label: 'Description', kind: 'textarea', wide: true },
       { name: 'body', label: 'Extra paragraphs', kind: 'list', wide: true },
-      { name: 'primaryLabel', label: 'Primary button — label', kind: 'text' },
-      { name: 'primaryHref', label: 'Primary button — link', kind: 'text' },
-      { name: 'secondaryLabel', label: 'Secondary button — label', kind: 'text' },
-      { name: 'secondaryHref', label: 'Secondary button — link', kind: 'text' },
+      { name: 'primaryLabel', label: 'Primary button - label', kind: 'text' },
+      { name: 'primaryHref', label: 'Primary button - link', kind: 'text' },
+      { name: 'secondaryLabel', label: 'Secondary button - label', kind: 'text' },
+      { name: 'secondaryHref', label: 'Secondary button - link', kind: 'text' },
       publishedField,
     ],
   },

@@ -6,11 +6,11 @@ import { ButtonAnchor, ButtonLink } from '@/components/ui/Button'
 
 /**
  * The reference site's signature move: one portrait split down the middle to
- * stand for two skill sets. Both halves are the same file — `clip-path` shows
+ * stand for two skill sets. Both halves are the same file - `clip-path` shows
  * one vertical half of each, and a different filter gives each half its mood.
  */
 function SplitPortrait({ avatar, alt }: { avatar: string; alt: string }) {
-  // The source is a wide shot, so zoom onto the face — otherwise the "split
+  // The source is a wide shot, so zoom onto the face - otherwise the "split
   // face" reads as a split landscape. Clipping lives on the wrappers and the
   // zoom on the images: a transform on a clipped element would scale the clip
   // region too and break the exact 50/50 seam.
@@ -19,7 +19,7 @@ function SplitPortrait({ avatar, alt }: { avatar: string; alt: string }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[22rem] lg:max-w-[26rem]">
       <div className="absolute inset-0 overflow-hidden rounded-full border border-line bg-elevated">
-        {/* Left half — front end, warm. */}
+        {/* Left half - front end, warm. */}
         <div className="absolute inset-0 [clip-path:inset(0_50%_0_0)]">
           <img
             src={avatar}
@@ -32,7 +32,7 @@ function SplitPortrait({ avatar, alt }: { avatar: string; alt: string }) {
           />
         </div>
 
-        {/* Right half — back end, cool and desaturated. The alt text sits on the
+        {/* Right half - back end, cool and desaturated. The alt text sits on the
             left image only, so this one is decorative to avoid a duplicate. */}
         <div className="absolute inset-0 [clip-path:inset(0_0_0_50%)]">
           <img
@@ -79,7 +79,7 @@ export function SplitHero() {
   return (
     <section className="mx-auto max-w-content px-5 pb-8 pt-12 md:px-8 md:pt-20">
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_minmax(18rem,26rem)_1fr] lg:gap-8">
-        {/* Left annotation — hidden on small screens where there's no room. */}
+        {/* Left annotation - hidden on small screens where there's no room. */}
         <div className="hidden flex-col items-start gap-3 lg:flex">
           <Annotation label={halves.left.label} caption={halves.left.caption} side="left" />
           <HalfStack side="left" half={halves.left} />

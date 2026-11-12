@@ -23,7 +23,7 @@ function formatSize(bytes: number) {
 /**
  * An image field is either a link to somewhere else (most skill logos are
  * hosted on a CDN) or a file in the library, so the control offers both: type
- * a URL, or pick from — and upload into — the media library.
+ * a URL, or pick from - and upload into - the media library.
  */
 export function MediaPicker({
   value,

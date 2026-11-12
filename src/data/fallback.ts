@@ -4,7 +4,7 @@ import type { ContentBlock, SiteContent } from '@/types'
  * The content the site shipped with, kept as a bundled fallback.
  *
  * The CMS is the source of truth, but a portfolio that renders nothing when
- * the API is asleep is worse than one that renders slightly stale copy — so
+ * the API is asleep is worse than one that renders slightly stale copy - so
  * the first paint uses this and swaps in live content when it arrives.
  * It mirrors what `prisma/seed.ts` in the CMS repo inserts.
  */
@@ -30,46 +30,46 @@ function block(
 }
 
 const blocks: ContentBlock[] = [
-  block('home.hero', 'home', 'Home — hero buttons', {
+  block('home.hero', 'home', 'Home - hero buttons', {
     primary: { label: 'View my work', href: '/work' },
     secondary: { label: 'Read my resume', href: null },
   }),
-  block('home.selected_work', 'home', 'Home — selected work', {
+  block('home.selected_work', 'home', 'Home - selected work', {
     eyebrow: 'Selected work',
     title: "A few things I've shipped",
     description: 'Products taken from an empty repository to something real people use.',
     primary: { label: 'See all projects', href: '/work' },
   }),
-  block('home.about', 'home', 'Home — about teaser', {
+  block('home.about', 'home', 'Home - about teaser', {
     eyebrow: 'About',
     title: 'Two halves of the same engineer',
     primary: { label: 'More about me', href: '/about' },
   }),
-  block('about.hero', 'about', 'About — hero', {
+  block('about.hero', 'about', 'About - hero', {
     eyebrow: 'About me',
     primary: { label: 'Read my resume', href: null },
   }),
-  block('about.experience', 'about', 'About — experience heading', {
+  block('about.experience', 'about', 'About - experience heading', {
     eyebrow: 'Experience',
     title: "Where I've been",
   }),
-  block('about.skills', 'about', 'About — skills heading', {
+  block('about.skills', 'about', 'About - skills heading', {
     eyebrow: 'Skills',
     title: 'What I build with',
     description:
       'The tools I reach for day to day, split between what ships to the browser and what keeps the workflow sane.',
   }),
-  block('work.hero', 'work', 'Work — hero', {
+  block('work.hero', 'work', 'Work - hero', {
     eyebrow: 'Work',
     title: "Projects I've taken end to end",
     description:
-      'Client work, side projects, and the odd experiment — from the database schema all the way to the last bit of polish on the interface.',
+      'Client work, side projects, and the odd experiment - from the database schema all the way to the last bit of polish on the interface.',
   }),
-  block('news.hero', 'news', 'News — hero', {
+  block('news.hero', 'news', 'News - hero', {
     eyebrow: 'Reading',
     title: 'What the industry is talking about',
     description:
-      'A live feed of updates, tutorials and trends from the tech world. Pick a topic — every headline links straight to the original source.',
+      'A live feed of updates, tutorials and trends from the tech world. Pick a topic - every headline links straight to the original source.',
   }),
   block('global.contact_cta', 'global', 'Contact call to action', {
     eyebrow: 'Say hello',
@@ -81,7 +81,7 @@ const blocks: ContentBlock[] = [
   block('global.not_found', 'global', '404 page', {
     eyebrow: 'Dead end',
     title: '404',
-    description: 'That page doesn’t exist — it may have moved during the rebuild.',
+    description: 'That page doesn’t exist - it may have moved during the rebuild.',
     primary: { label: 'Back to home', href: '/' },
   }),
   block('global.footer', 'global', 'Footer note', {
@@ -98,38 +98,38 @@ const blocks: ContentBlock[] = [
 export const fallbackContent: SiteContent = {
   profile: {
     name: 'Gilang Mukharom',
-    role: 'Software Engineer',
+    role: 'Full-Stack Software Engineer',
     location: 'Tangerang, Indonesia',
     email: 'gilangmukharom53@gmail.com',
     resumeUrl:
       'https://drive.google.com/file/d/1lgHqVL1YPSvG9I3Nj_NXEBCvMb4mvJ2p/view?usp=sharing',
     avatar: '/img/profile_resizes.jpg',
-    roles: ['front-end engineer', 'back-end engineer', 'software engineer', 'problem solver'],
+    roles: ['full-stack engineer', 'front-end engineer', 'back-end engineer', 'problem solver'],
     intro:
-      'I build both halves of the product — the interface people touch and the services behind it.',
+      'I build both halves of the product - the interface people touch and the services behind it.',
     bio: [
-      'I’m a software engineer based in Tangerang, Indonesia. For the past 2+ years I’ve been building enterprise web applications for Garuda Indonesia — the Internet Booking Engine, the CMS, and the Loyalty Program platform — using React, TypeScript, Laravel, Express, PostgreSQL and Prisma.',
-      'I enjoy turning complex problems into reliable, fast, intuitive web applications and backend services. I design and ship RESTful APIs with Express and Prisma, wire them into modern frontend stacks, and work closely with cross-functional teams in Agile environments to deliver smooth, end-to-end experiences.',
-      'My focus is helping businesses launch products that are robust, maintainable, and genuinely pleasant to use.',
+      'I’m a full-stack software engineer based in Tangerang, Indonesia, with 2+ years of experience delivering production-grade web applications for the aviation sector at PT Aero Systems Indonesia, part of the Garuda Indonesia Group - including the Internet Booking Engine (IBE), a headless CMS and the AMALA Loyalty Program.',
+      'My day-to-day stack is JavaScript and TypeScript (React, Next.js, Express) and PHP (Laravel), backed by PostgreSQL, MySQL and Redis. I design RESTful APIs and middleware, tune SQL queries and indexes, and ship with Docker and CI/CD pipelines on Jenkins and GitHub Actions to cloud platforms like GCP and Tencent Cloud.',
+      'I care about clean architecture, performance and maintainable code - and I enjoy the whole loop, from Agile planning with cross-functional teams to triaging a live incident in production.',
     ],
     halves: {
       left: {
         label: 'Front end',
         caption: 'Interfaces people actually enjoy using',
-        stack: ['React', 'TypeScript', 'Next.js', 'Tailwind'],
+        stack: ['React', 'Next.js', 'TypeScript', 'Tailwind'],
       },
       right: {
         label: 'Back end',
         caption: 'APIs and data that hold up under load',
-        stack: ['Express', 'Prisma', 'PostgreSQL', 'Laravel'],
+        stack: ['Express', 'Laravel', 'PostgreSQL', 'Redis'],
       },
     },
   },
 
   settings: {
-    siteTitle: 'Gilang Mukharom — Software Engineer',
+    siteTitle: 'Gilang Mukharom - Full-Stack Software Engineer',
     siteDescription:
-      'Portfolio of Gilang Mukharom, a software engineer building web applications and backend services with React, TypeScript, Express, Prisma and PostgreSQL.',
+      'Portfolio of Gilang Mukharom, a full-stack software engineer building production web applications and APIs with React, Next.js, TypeScript, Express, Laravel, PostgreSQL and Redis.',
     ogImage: '/img/Home2.jpeg',
     themeDefault: 'system',
     footerNote: 'Built with React, TypeScript and Tailwind.',
@@ -138,31 +138,50 @@ export const fallbackContent: SiteContent = {
 
   stats: [
     { value: '2+', label: 'Years shipping production software' },
-    { value: '3', label: 'Enterprise platforms at Garuda Indonesia' },
-    { value: '6', label: 'Projects shipped end to end' },
+    { value: '10K+', label: 'Daily bookings on the Garuda Indonesia IBE' },
+    { value: '30%', label: 'Faster page loads on the booking engine' },
   ],
 
   experience: [
     {
-      company: 'Garuda Indonesia',
-      role: 'Software Engineer',
-      period: '2023 — Present',
+      company: 'PT Aero Systems Indonesia (Garuda Indonesia Group)',
+      role: 'Software Engineer (Fullstack Developer)',
+      period: 'Feb 2024 - Present',
       location: 'Tangerang, Indonesia',
       highlights: [
-        'Built and maintained the Internet Booking Engine (IBE) front end in React and TypeScript.',
-        'Shipped a CMS used by internal teams to manage customer-facing content.',
-        'Designed and delivered RESTful services for the Loyalty Program with Express, Prisma and PostgreSQL.',
-        'Worked in Agile, cross-functional squads from discovery through release.',
+        'Built and optimised the Internet Booking Engine (IBE) for Garuda Indonesia with React, Express and TypeScript - improving page load speed by 30% and supporting 10,000+ daily bookings.',
+        'Designed RESTful APIs and middleware with Express and TypeScript, moving the backend toward a microservices-style architecture for cleaner routing and modularity.',
+        'Built and maintained a headless CMS with Laravel, PostgreSQL and Redis that cut content update time.',
+        'Contributed to the AMALA Loyalty Program with React and TypeScript.',
+        'Developed a wearable app for Huawei devices in ArkTS, synced in real time with backend services and a companion mobile app.',
+        'Developed backend services for special service requests, order management and airline reservation system integration with real-time booking status updates.',
+        'Optimised MySQL and PostgreSQL with indexing strategies, query tuning and faster bulk uploads, and used Redis for caching and asynchronous queueing.',
+        'Built reusable UI components and a design system with Material UI, Tailwind CSS and SCSS.',
+        'Handled production support, code reviews, unit testing and CI/CD alongside project managers, QA and business analysts.',
       ],
     },
     {
       company: 'Freelance',
-      role: 'Web Developer',
-      period: '2021 — Present',
+      role: 'Full-Stack Developer',
+      period: '2021 - Present',
       location: 'Remote',
       highlights: [
+        'Built a school attendance and payroll system (SIPP), a program proposal platform (SIAYUB) and a location-based mobile game (Nusaverse) end to end - from the database schema and API to the web and mobile clients.',
         'Delivered profile sites, admin dashboards and internal tools for foundations, villages and small businesses.',
-        'Stacks ranged from Laravel and CodeIgniter with MySQL to React with Express and PostgreSQL.',
+        'Stacks ranged from Laravel and CodeIgniter with MySQL to Next.js, Express, Go and Flutter on PostgreSQL.',
+      ],
+    },
+    {
+      company: 'PT Media Kreasi Abadi',
+      role: 'Front-End Developer Internship',
+      period: 'Jul 2022 - Dec 2022',
+      location: 'Balikpapan, Indonesia',
+      highlights: [
+        'Built responsive web applications for corporate clients in logistics and education with React, Ant Design and Tailwind CSS.',
+        'Implemented Redux for centralised state management, business logic and API communication layers.',
+        'Integrated backend APIs with the front end across two web and mobile application launches.',
+        'Set up CI/CD pipelines with GitHub Actions to automate build, test and deployment.',
+        'Helped define technical requirements in application design sessions.',
       ],
     },
   ],
@@ -181,16 +200,47 @@ export const fallbackContent: SiteContent = {
 
   projects: [
     {
-      slug: 'nova-trading-analytics',
-      name: 'Nova Trading Analytics',
+      slug: 'sipp',
+      name: 'SIPP',
       summary:
-        'A stock analysis platform that helps traders track price movements, visualise charts, and weigh up opportunities without wading through spreadsheets.',
-      media: '/img/nova.gif',
-      stack: ['React', 'Express', 'PostgreSQL'],
+        'Sistem Informasi Presensi PGRI - an attendance and payroll system for a school. Teachers and staff clock in with face recognition, while admins run daily attendance, leave, teaching hours, payroll recaps and the staff cooperative from one dashboard.',
+      media: '/img/sipp.webp',
+      stack: ['Next.js', 'TypeScript', 'Material UI', 'Express', 'Prisma', 'PostgreSQL'],
       type: 'Freelance',
+      featured: true,
+    },
+    {
+      slug: 'nusaverse',
+      name: 'Nusaverse',
+      summary:
+        'A location-based educational game for mobile. Players explore historic sites on a custom vector map to discover Indonesian national heroes, collect hero cards, take quizzes and spend NUSA POINTS in a reward store.',
+      media: '/img/nusaverse.webp',
+      stack: ['Flutter', 'BLoC', 'Express', 'Prisma', 'PostgreSQL'],
+      type: 'Freelance',
+      featured: true,
+    },
+    {
+      slug: 'siayub',
+      name: 'SIAYUB',
+      summary:
+        'A program proposal platform for youth organisations. Groups submit and track proposals, reviewers verify them against a 30-day SLA, and the agency follows budgets, KPIs and a regional distribution map through to disbursement.',
+      media: '/img/siayub.webp',
+      stack: ['Next.js', 'TypeScript', 'Material UI', 'Go', 'PostgreSQL'],
+      type: 'Freelance',
+      featured: true,
+    },
+    {
+      // Slug kept from the project's earlier name so the CMS row updates in place.
+      slug: 'nova-trading-analytics',
+      name: 'Fundametrics',
+      summary:
+        'A stock analysis platform for fundamentals tracking, financial ratio analysis and portfolio watchlists, with premium subscriptions paid through Midtrans. Containerised with Docker and deployed on Tencent Cloud.',
+      media: '/img/nova.gif',
+      stack: ['Next.js', 'Express', 'TypeScript', 'PostgreSQL', 'Docker'],
+      type: 'Mini Project',
       github: 'https://github.com/gilangmukharom/novo',
       demo: 'https://app.nova-trading-analytics.my.id/',
-      featured: true,
+      featured: false,
     },
     {
       slug: 'lingtar',
@@ -201,7 +251,6 @@ export const fallbackContent: SiteContent = {
       stack: ['React', 'TypeScript', 'Express', 'PostgreSQL'],
       type: 'Mini Project',
       github: 'https://github.com/gilangmukharom/lingtar',
-      featured: true,
     },
     {
       slug: 'yayasan-nur-assyifa',
@@ -213,7 +262,6 @@ export const fallbackContent: SiteContent = {
       type: 'Freelance',
       github: 'https://github.com/gilangmukharom/Yayasan_Nursyifa',
       demo: 'https://yayasannurassyifasamarinda.com/',
-      featured: true,
     },
     {
       slug: 'sipaldeba',
@@ -304,6 +352,30 @@ export const fallbackContent: SiteContent = {
     { name: 'PostgreSQL', role: 'Database', group: 'stack', iconUrl: '/img/postgree.png' },
     { name: 'MySQL', role: 'Database', group: 'stack', iconUrl: '/img/mysql.png' },
     {
+      name: 'Redis',
+      role: 'Caching & queues',
+      group: 'stack',
+      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+    },
+    {
+      name: 'PHP',
+      role: 'Backend',
+      group: 'stack',
+      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    },
+    {
+      name: 'Redux',
+      role: 'State management',
+      group: 'stack',
+      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
+    },
+    {
+      name: 'Zustand',
+      role: 'State management',
+      group: 'stack',
+      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zustand/zustand-original.svg',
+    },
+    {
       name: 'Git',
       role: 'Version control',
       group: 'tools',
@@ -320,6 +392,32 @@ export const fallbackContent: SiteContent = {
       role: 'Containers',
       group: 'tools',
       iconUrl: 'https://img.icons8.com/fluency/48/docker.png',
+    },
+    {
+      name: 'Jenkins',
+      role: 'CI/CD',
+      group: 'tools',
+      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
+    },
+    {
+      name: 'GitHub Actions',
+      role: 'CI/CD',
+      group: 'tools',
+      iconUrl:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg',
+    },
+    {
+      name: 'Postman',
+      role: 'API testing',
+      group: 'tools',
+      iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
+    },
+    {
+      name: 'Google Cloud',
+      role: 'Cloud',
+      group: 'tools',
+      iconUrl:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
     },
     {
       name: 'VS Code',
