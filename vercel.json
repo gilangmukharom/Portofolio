@@ -2,7 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "comment": "Every route is client-side, including /admin. /api is excluded so a misconfigured VITE_API_URL fails as a clean 404 rather than returning this HTML page.",
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
